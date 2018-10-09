@@ -1,0 +1,31 @@
+extends layout
+
+block content
+				center
+				.pricing-header.px-3.py-3.pt-md-5.pb-md-4.mx-auto.text-center
+					h3.display-4 Enter Your Marks 
+				div(class="border-primary", id="marks-input")
+					form(name='marks', action='/user/one', method='get')
+						table(class="table-primary", id="table1")
+							tr
+								td physics
+								td 
+									input(type='text',name='physics')
+							br
+							tr
+								td chemistry
+								td 
+									input(type='text',name='chemistry')
+							br
+							tr
+								td maths
+								td 
+									input(type='text',name='maths')
+						br
+						br
+						input(class="btn-outline-primary", type='submit',name='submit',value='submit')
+
+
+						span(class='my-error-msg')= errMsg
+						span(class='my-success-msg')= sucMsg 
+					

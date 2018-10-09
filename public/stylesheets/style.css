@@ -1,0 +1,34 @@
+#header {
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+    color: aliceblue;
+}
+
+#marks-input {
+    padding: 1%;
+    text-align: center;
+}
+
+#table1 {
+    margin-left: 40%;
+    margin-right: 30%;
+}
+/* table.center {
+        margin-left: auto;
+        margin-right: auto;
+} */
+
+#clgtable {
+    text-align: center;
+    padding: 3%;
+}
+
+#list1 {
+    list-style: none;
+    color: #ffffff;
+}
+
+#list1:hover {
+    color: #57db23;
+}

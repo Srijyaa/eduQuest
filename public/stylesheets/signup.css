@@ -1,0 +1,40 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#cancelbtn:hover  {
+    color: red;
+    opacity: 0.7;
+}
+
+#confirmbtn {
+    margin-top: 3%;
+}
+
+#additional {
+    padding-top: 3%;
+}
+
+.image-container {
+    margin-top: 3%;
+    padding: 10px;
+}
+
+.title {
+    padding: 16px;
+}

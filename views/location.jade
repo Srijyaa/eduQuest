@@ -1,0 +1,20 @@
+extends layout
+
+block content
+				center
+					.pricing-header.px-3.py-3.pt-md-5.pb-md-4.mx-auto.text-center
+						h3.display-4 Enter Your Location
+					br
+					br
+					form(name='marks', action='/user/one', method='get')
+						select
+							option(value='a') a
+							option(value='b') b
+							option(value='c') c
+							option(value='d') d
+							option(value='e') e
+						br
+						br
+						input(class="btn-outline-primary", type='submit',name='submit',value='submit')
+					
+					

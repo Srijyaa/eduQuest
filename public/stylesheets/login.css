@@ -1,0 +1,68 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    width: 60%;
+    height: 100%;
+    display: inline-block;
+}
+
+html {
+  overflow-y: scroll;
+
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Titillium Web', sans-serif;
+  align-content: center;
+  
+
+}
+
+#inputEmail {
+  margin-left: 200px;
+  width: 50%;
+}
+
+#inputPassword {
+  margin-left: 200px;
+  width: 50%;
+}
+#cancelbtn:hover  {
+    color: red;
+    opacity: 0.7;
+}
+
+#additional {
+    padding-top: 3px;
+    width: fit-content;
+    align-content: space-between;
+    -ms-grid-row-align: start;
+    margin-left: 240px;
+}
+
+.image-container {
+    margin-top: 3%;
+    padding: 10px;
+}
+
+.title {
+    padding: 16px;
+}
+
+#loginbtn { 
+  width: 50%;
+  /*display: inline-block;*/
+  margin-left: 200px;
+}
+
+#cancelbtn {
+    width: 50%;
+    margin-left: 200px;
+    /*display: inline-block;*/
+}

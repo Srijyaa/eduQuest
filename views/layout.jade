@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		title #{title}
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+
+	body
+		nav.navbar.navbar-expand-md.navbar-dark.bg-dark.mb-4
+			h2.navbar-brand Edu-Quest
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarCollapse', aria-controls='navbarCollapse', aria-expanded='false', aria-label='Toggle navigation')
+				span.navbar-toggler-icon
+			#navbarCollapse.collapse.navbar-collapse
+				ul.navbar-nav.mr-auto
+					li.nav-item.active
+						a.nav-link(id='list1', href='/')
+							| HOME 
+					
+				form.form-inline.mt-2.mt-md-0
+					li(class='list').nav-item
+						a.nav-link(id='list1', href='/login') LOGIN
+					li(class='list').nav-item
+						a.nav-link(id='list1', href='/signup') SIGNUP
+		block content

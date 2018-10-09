@@ -1,0 +1,28 @@
+extends layout
+
+block content
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js')
+		link(href='/stylesheets/button.css', rel='stylesheet')
+		center
+			.pricing-header.px-3.py-3.pt-md-5.pb-md-4.mx-auto.text-center
+				h3.display-4 College Selection Based On
+			br
+			form(name='marks', action='/user/marks', method='get')
+				input(id='button1',type='submit', name='marks', value='marks',class='btn btn-outline-primary')
+			br
+			br
+			form(name='location', action='/user/location', method='get')
+				input(id='button1',type='submit', name='location', value='location',class='btn btn-outline-primary')
+			br
+			br
+			form(name='fees', action='/user/fees', method='get')
+				input(id='button1',type='submit', name='fees', value='fees',class='btn btn-outline-primary')
+			br
+			br
+			form(name='interest',action='user/interest',method='get')
+				input(id='button1',type='submit',name='interest',value='interest',class='btn btn-outline-primary')
+					
+					

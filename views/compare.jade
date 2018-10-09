@@ -1,0 +1,40 @@
+extends layout
+
+block content
+	doctype html
+	html(lang='en')
+		head
+			meta(charset='utf-8')
+			meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+			meta(name='description', content='')
+			meta(name='author', content='')
+			title Compare Colleges
+			link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+		body
+			.pricing-header.px-3.py-3.pt-md-5.pb-md-4.mx-auto.text-center
+				h2.display-4 Colleges
+			.container
+				.card-deck.mb-3.text-center
+					.card.mb-6.shadow-sm
+						.card-header
+							h4.my-0.font-weight-normal VGEC
+						.card-body
+							img(src='/images/vgec.jpg', style='width:100%;height: auto')
+							ul.list-unstyled.mt-3.mb-4
+								li Ratings : 4.5/5
+								li Location : Chandkheda , Ahmedabad
+								li Fees : 2000 per year
+								li Class : Non-Ac
+								li Canteen : Availible
+					.card.mb-6.shadow-sm
+						.card-header
+							h4.my-0.font-weight-normal LDCE
+						.card-body
+							img(src='/images/ld.jpg', style='width:100%;height: auto')
+							ul.list-unstyled.mt-3.mb-4
+								li Ratings : 4/5
+								li Location : Memnagar , Ahmedabad
+								li Fees : 2000 per year
+								li Class : Non-Ac
+								li Canteen : Availible
+			

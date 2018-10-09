@@ -1,0 +1,49 @@
+extends layout
+
+block content	
+
+	head
+		title Bootstrap Card
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js')
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js')
+		link(href='/stylesheets/button.css', rel='stylesheet')
+  
+	body 	
+		.pricing-header.px-3.py-3.pt-md-5.pb-md-4.mx-auto.text-center
+			h3.display-4 About EduQuest
+		div(class='paragraph')
+			p Every student faces the challenge to determine their future path, aspired educational institute,course to pursue. The procedure of determining the stream of their interest, career paths and suitable institute is often very chaotic, time consuming and leads to a lot of confusion to both the aspirants and their parents. They usually to visit different colleges, consult teachers and other referrals to seek information about which course and institute would best suit their requirements and interest. 1.2 About the Definition Through our project, we aim to solve the above mentioned problems. We aim to provide an online consulting platform for engineering aspirants, seeking admissions to the courses and institutes of their preference, and also to provide them with reliable reviews and feedbacks about various colleges and their admission criterias.	
+		br
+		.container
+			br
+			br
+			div(class='row')
+				div(class='col-12 col-md-4')
+					form(name='interaction', action='/interaction', method='get')
+						input(id='button', type='submit', name='interaction', value='Alumni Interaction', class='btn btn-primary')		
+				div(class='col-12 col-md-4')
+					form(name='college', action='/college', method='get')
+						input(id='button', type='submit', name='college', value='College Selection', class='btn btn-primary')
+				div(class='col-12 col-md-4')
+					form(name='exam', action='/exams', method='get')
+						input(id='button', type='submit', name='exam', value='Exam Information', class='btn btn-primary')
+			br
+			br
+
+			div(class='row')
+				div(class='col-12 col-md-4')
+					form(name='interaction', action='/career', method='get')
+						input(id='button', type='submit', name='interaction', value='  Career  Options  ', class='btn btn-primary')		
+				div(class='col-12 col-md-4')
+					form(name='college', action='/compare', method='get')
+						input(id='button',type='submit', name='college', value='compare colleges', class='btn btn-primary')
+
+			br
+			br
+			
+				
+					

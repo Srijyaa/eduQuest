@@ -1,0 +1,21 @@
+extends layout
+
+block content
+				center
+					//- div(class="bg-primary", id="header")
+					//- 	h3 Enter Your Criteria
+					.pricing-header.px-3.py-3.pt-md-5.pb-md-4.mx-auto.text-center
+						h4.display-4 Enter Your Criteria
+					br
+					br
+					form(name='marks', action='/user/one', method='get')
+						select
+							option(value='a') less than 10000
+							option(value='b') 10000-50000
+							option(value='c') 50000-100000
+							option(value='d') more than 100000
+						br
+						br
+						input(class="btn-outline-primary", type='submit',name='submit',value='submit')
+					
+					

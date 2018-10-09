@@ -1,0 +1,24 @@
+head
+    title EduQuest Login
+    link(href='/stylesheets/login.css', rel='stylesheet')
+    link(rel="stylesheet", href="/bootstrap/css/bootstrap.css")
+body.text-center
+    form.form-signin(action='/login', method='post')
+        .image-container
+        img.img-fluid(src='/images/confused.png', alt='confused student', width='120', height='120')
+        .container
+        .title
+            h1.heading-welcome Welcome Back!
+            h3.heading Login
+        label.sr-only(for='inputEmail') Email address
+        input#inputEmail.form-control(placeholder='Email address', required , autofocus , type='email',name='email')
+        label.sr-only(for='inputPassword') Password
+        input#inputPassword.form-control(name='password',placeholder='Password', required , type='password')
+        .checkbox.mb-3
+        button#loginbtn.btn.btn-lg.btn-outline-primary.btn-block(type='submit') Login
+        button#cancelbtn.btn.btn-lg.btn-outline-primary.btn-block(type='submit') Cancel
+        #additional
+            span.psw
+            p
+                | Don't have an account?
+                a(href='signup') Signup

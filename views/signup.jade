@@ -1,0 +1,34 @@
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  meta(name='description', content='')
+  meta(name='author', content='')
+
+  title Edu-Quest SignUp
+  
+  link(href='/stylesheets/signup.css', rel='stylesheet')
+  link(rel='stylesheet', href='/bootstrap/css/bootstrap.css')
+
+  link(href='../stylesheets/signup.css', rel='stylesheet')
+body.text-center
+  form.form-signin(action='/signup', method='post')
+    .image-container
+      img.img-fluid(src='/images/confused.png', alt='confused student', width='80', height='80')
+    .container
+      .title
+        h1.heading-welcome Gear Up for Wonders!
+        h3.heading SignUp
+      label.sr-only(for='inputName') Name
+      input#inputName.form-control(name='name', placeholder='Name', required='', autofocus='', type='text')
+      label.sr-only(for='inputEmail') Email address
+      input#inputEmail.form-control(name='email', placeholder='Email address', required='', type='email')
+      label.sr-only(for='inputPassword') Password
+      input#inputPassword.form-control(name="password", placeholder='Password', required='', type='password')
+      label.sr-only(for='checkPassword') Confirm Password
+      input#checkPassword.form-control(name="password2", placeholder='Confirm Password', required='', type='password')
+      button#confirmbtn.btn.btn-lg.btn-outline-primary.btn-block(type='submit') Confirm
+      button#cancelbtn.btn.btn-lg.btn-outline-primary.btn-block(type='submit') Cancel
+      #additional
+        span.old-acc
+          | Already have an account?
+          a(href='./login') Login

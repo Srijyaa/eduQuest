@@ -1,0 +1,20 @@
+extends layout
+
+block content
+				center
+					.pricing-header.px-3.py-3.pt-md-5.pb-md-4.mx-auto.text-center
+						h3.display-4 Select Your Interest From Following 
+					br
+					br
+					form(name='marks', action='/user/one', method='get')
+						input(class="btn-outline-primary", type='submit',name='civil',value='buildings & constructions')
+						br
+						br
+						input(class="btn-outline-primary", type='submit',name='computer',value='computer gaming and technologies')
+						br
+						br
+						input(class="btn-outline-primary", type='submit',name='ec',value='mobile and telephone calls')
+						br
+						br
+						input(class="btn-outline-primary", type='submit',name='electrical',value='electrical')
+					
